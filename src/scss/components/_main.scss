@@ -1,0 +1,28 @@
+.hero {
+  height: calc(100vh - 8rem);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+//   background-image: url('/images/honey-yanibel-minaya-cruz-laORtJZaieU-unsplash.jpg');
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-blend-mode: overlay;
+  background-color: rgba(#2f455c, 1);
+  transition: 0.3s ease-in-out;
+  color: var(--clr-white);
+
+  h1 {
+      font-size: 4rem;
+  }
+  p {
+      margin-bottom: 4rem;
+  }
+}
+
+.services {
+    display: flex;
+    width: 100%;
+}
