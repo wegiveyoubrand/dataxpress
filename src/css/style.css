@@ -512,6 +512,13 @@ nav .nav-link:hover::after, nav .nav-link.active::after {
   width: 5rem;
 }
 
+main.auth {
+  display: -ms-grid;
+  display: grid;
+  height: calc(100% - 8rem);
+  place-items: center;
+}
+
 .hero {
   height: calc(100vh - 8rem);
   padding: 2rem;
@@ -544,6 +551,60 @@ nav .nav-link:hover::after, nav .nav-link.active::after {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+.container-form {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  -webkit-box-shadow: 0 0 5px 0 var(--clr-dark-grey);
+          box-shadow: 0 0 5px 0 var(--clr-dark-grey);
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.container-form h3 {
+  text-align: center;
+  padding: 0 10px 20px;
+}
+
+.container-form p {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .container-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .container-input input {
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+form .button {
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 footer {
