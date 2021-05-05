@@ -1,150 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./src/css/style.css" />
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>DataXpress Professionals</title>
-</head>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>DataXpress | Authentication</title>
+  </head>
 
-<body class="" id="auth">
+  <body>
     <header class="header">
-        <div class="company">
-            <div class="company-logo">
-                <img src="./images/DataXpressLogo.png" alt="">
-            </div>
-            <div class="company-name">
-                <!-- Data<span>Xpress</span> -->
-            </div>
+      <div class="company">
+        <div class="company-logo">
+          <img src="./images/DataXpressLogo.png" alt="" />
         </div>
-        <nav class="nav">
-            <div class="">
-                <a href="" class="nav-link">Explore</a>
-                <a href="" class="nav-link">Pricing</a>
-                <a href="" class="nav-link ">FAQs</a>
-
-            </div>
-
-            <div class="">
-                <a href="" class="nav-link">Upload Data</a>
-                <a href="" class="nav-link active">Create account</a>
-            </div>
-        </nav>
-        <div class="menu-toggle">
-            <span></span>
+        <div class="company-name">
+          <!-- Data<span>Xpress</span> -->
         </div>
+      </div>
+      <nav class="nav">
+        <div class="">
+          <a href="" class="nav-link">Explore</a>
+          <a href="" class="nav-link">Pricing</a>
+          <a href="" class="nav-link">Services</a>
+          <a href="" class="nav-link">FAQs</a>
+        </div>
+
+        <div class="">
+          <a href="" class="nav-link">Request a Demo</a>
+          <a href="./auth.html" class="nav-link active">Login</a>
+        </div>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+      </div>
     </header>
 
-    <main class="main">
-        <div class="section-wrapper">
-            <section class="section hero">
-                <div class="">
-                    <h1>Let's DataX it!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem commodi ad magnam
-                        itaque
-                        recusandae?</p>
+    <main class="container-global">
+      <div class="container-form">
+        <h3>Create Account</h3>
+        <form action="" class="form">
+          <div class="container-input">
+            <label for="">Email address</label>
+            <input type="text" />
+          </div>
+          <div class="container-input">
+            <label for="">Password</label>
+            <input type="text" />
+          </div>
+          <div class="container-input">
+            <label for="">Confirm Password</label>
+            <input type="text" />
+          </div>
 
-                    <button class="button btn-primary__inverse">Explore the Possibilities</button>
-                </div>
-            </section>
-
-            <section class="section offers">
-                <h1 class="title">Who are our services currently for?</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-                <div class="row">
-                    <div class="card service-col">
-                        <div class="image">
-                            <img src="./images/honey-yanibel-minaya-cruz-laORtJZaieU-unsplash.jpg" alt="">
-                        </div>
-                        <h3>Students</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate.</p>
-                    </div>
-                    <div class="card service-col">
-                        <div class="image">
-                            <img src="./images/andrew-neel-ute2XAFQU2I-unsplash.jpg " alt="">
-                        </div>
-                        <h3>Businesses</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate.</p>
-                    </div>
-                    <div class="card service-col">
-                        <div class="image">
-                            <img src="./images/m-t-elgassier-aCZ2hiC-iDk-unsplash.jpg " alt="">
-                        </div>
-                        <h3>Researchers</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate.</p>
-                    </div>
-                    <div class="card service-col">
-                        <div class="image">
-                            <img src="./images/nate-greno-ZSpL6_sId9w-unsplash.jpg " alt="">
-                        </div>
-                        <h3>Non-Governmental Organisations</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate.</p>
-                    </div>
-
-                </div>
-
-                <div class="button-container">
-                    <button class="button btn-pri">Sign up now</button>
-
-                </div>
-            </section>
-
-            <section class="testimonials">
-                <h1 class="title">What Our Client Say</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="row">
-                    <div class="testimonial-col">
-                        <img src="./images/christian-lue-P0JL8np1N6k-unsplash.jpg" alt="">
-                        <div class="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis ad ipsam
-                                perspiciatis inventore nulla quisquam! Perspiciatis nihil vitae dignissimos.</p>
-                            <h3>Chris Coyler</h3>
-                        </div>
-                    </div>
-                    <div class="testimonial-col">
-                        <img src="./images/m-t-elgassier-aCZ2hiC-iDk-unsplash.jpg" alt="">
-                        <div class="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione veritatis ad ipsam
-                                perspiciatis inventore nulla quisquam! Perspiciatis nihil vitae dignissimos.</p>
-                            <h3>Christine Debirah</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-
+          <button class="button button-primary">Create account</button>
+        </form>
+      </div>
     </main>
 
-    <footer>
-
-        <div class="row">
-            <div class="">
-                <a href="" class="">Terms & Policy</a>
-                <a href="" class="">Site Map</a>
-                <a href="" class="">About</a>
-                <a href="" class="">Contact </a>
-                <hr>
-            </div>
-            <div class="">
-                <p>DataXpress <span>&copy;&nbsp;2021</span></p>
-            </div>
-
-        </div>
-
-    </footer>
-
-
-    <!-- <footer class="footer">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis, fugiat quia ipsam laboriosam ut illo officiis, reprehenderit sed adipisci mollitia, repudiandae asperiores rerum modi provident? Veritatis, iusto temporibus. Nemo!</p>
-    </footer> -->
-
-    <script src="./src/index.js"></script>
-</body>
-
+    <script src="/src/js/main.js" type="module"></script>
+  </body>
 </html>
