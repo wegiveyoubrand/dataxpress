@@ -471,6 +471,11 @@ nav .nav-link:hover::after, nav .nav-link.active::after {
 }
 
 /* ==== HEADER ==== */
+#auth header {
+  -webkit-box-shadow: 0 0 15px 0 var(--clr-dark-grey);
+          box-shadow: 0 0 15px 0 var(--clr-dark-grey);
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
