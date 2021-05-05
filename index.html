@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>DataXpress Professionals</title>
   </head>
@@ -21,9 +28,23 @@
       </div>
       <nav class="nav">
         <div class="">
-          <a href="" class="nav-link">Explore</a>
+          <div class="drop-down">
+            <a href="" class="nav-link">Explore</a>
+            <div class="dropdown-content">
+              <a href="">About</a>
+              <a href="">Partners</a>
+              <a href="">Contact</a>
+            </div>
+          </div>
           <a href="" class="nav-link">Pricing</a>
-          <a href="" class="nav-link">Services</a>
+          <div class="drop-down">
+            <a href="" class="nav-link">Services</a>
+            <div class="dropdown-content">
+              <a href="" class="">Data Virtualization</a>
+              <a href="" class="">Data Training</a>
+              <a href="" class="">Consultaion</a>
+            </div>
+          </div>
           <a href="" class="nav-link">FAQs</a>
         </div>
 
@@ -172,6 +193,14 @@
       </div>
     </main>
 
+    <div class="live-chat-feature">
+      <i class="material-icons">question_answer</i>
+    </div>
+
+    <div class="scroll-to-top">
+      <i class="material-icons">expand_less</i>
+    </div>
+
     <footer>
       <div class="row">
         <div class="">
@@ -192,6 +221,6 @@
     </footer> -->
 
     <script src="./src/index.js"></script>
-    <script src="./src/js/squareNumbers.js"></script>
+    <!-- <script src="./src/js/squareNumbers.js"></script> -->
   </body>
 </html>
