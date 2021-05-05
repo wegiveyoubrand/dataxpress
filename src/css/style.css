@@ -560,6 +560,7 @@ main.auth {
   -webkit-box-shadow: 0 0 5px 0 var(--clr-dark-grey);
           box-shadow: 0 0 5px 0 var(--clr-dark-grey);
   padding: 20px;
+  margin: 0 auto;
   margin-top: -20px;
 }
 
