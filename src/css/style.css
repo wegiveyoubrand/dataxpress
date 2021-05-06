@@ -215,13 +215,16 @@ section > p {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   margin-right: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .company-logo img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 8rem;
-  height: 100%;
+  height: auto;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
