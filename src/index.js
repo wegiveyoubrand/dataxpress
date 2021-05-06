@@ -2,7 +2,16 @@ const menuToggle = document.querySelector(".menu-toggle");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 
+const intro = document.querySelector(".intro");
+
 const btnScrollToTop = document.querySelector(".scroll-to-top");
+
+const goToHomes = document.querySelectorAll(".company");
+goToHomes.forEach((gotoHome) => {
+  gotoHome.addEventListener("click", () => {
+    location.href = "./index.html";
+  });
+});
 
 btnScrollToTop.addEventListener("click", () => {
   window.scrollTo({
@@ -16,6 +25,12 @@ menuToggle.addEventListener("click", (e) => {
   header.classList.toggle("fixed");
   menuToggle.classList.toggle("active");
 });
+setTimeout(slideUp, 2300);
+
+function slideUp() {
+  intro.classList.add("close");
+  console.log("oo");
+}
 
 const home = document.querySelectorAll(".company");
 home.forEach((redirect) => {
