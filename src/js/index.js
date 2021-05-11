@@ -9,15 +9,9 @@ const btnScrollToTop = document.querySelector(".scroll-to-top");
 const goToHomes = document.querySelectorAll(".company");
 goToHomes.forEach((gotoHome) => {
   gotoHome.addEventListener("click", () => {
-    location.href = "/index.html";
+    location.href = "./index.html";
   });
 });
-setTimeout(slideUp, 2300);
-
-function slideUp() {
-  intro.classList.add("close");
-  console.log("oo");
-}
 
 btnScrollToTop.addEventListener("click", () => {
   window.scrollTo({
@@ -32,6 +26,12 @@ menuToggle.addEventListener("click", (e) => {
   menuToggle.classList.toggle("active");
 });
 
+setTimeout(slideUp, 2300);
+
+function slideUp() {
+  intro.classList.add("close");
+  console.log("oo");
+}
 
 const home = document.querySelectorAll(".company");
 home.forEach((redirect) => {
