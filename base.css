@@ -1,11 +1,13 @@
 :root {
   --clr-black: #23272b;
+  --clr-white: #fff;
   --clr-grey: #dae1e7;
   --clr-yellow: #eeda2f;
   --clr-green: #26bbaa;
   --clr-purple: #e269ab;
   --clr-blue: #176fba;
   --clr-brown: #f7612c;
+  --clr-dark-grey: #2f455c;
 
   --font-serif: "Poppins";
 }
@@ -29,6 +31,7 @@ html {
 .wrapper {
 }
 
+/* LOGO */
 .company-logo {
   width: auto;
   height: 100%;
@@ -46,6 +49,8 @@ html {
   height: auto;
   transition: 0.3s ease;
 }
+
+/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -88,6 +93,46 @@ header nav a {
   color: var(--clr-green);
 }
 
+/* NAV */
+.nav-link {
+  position: relative;
+  z-index: 100;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+  transition: 0.3s all ease-in-out;
+  color: var(--clr-dark-grey);
+  font-weight: bold;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: orangered;
+  transition: 0.3s all ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--clr-white);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+  z-index: -1;
+}
+
+.nav-link:hover .dropdown-content {
+  transform: scaleY(1);
+}
+
+/* MAIN */
 main {
   min-height: 100vh;
 }
@@ -151,5 +196,9 @@ footer nav i:not(:last-child) {
 @media (max-width: 600px) {
   header nav {
     display: none;
+  }
+  .nav-link {
+    justify-content: start;
+    color: #fff;
   }
 }
