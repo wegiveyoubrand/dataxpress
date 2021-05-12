@@ -41,6 +41,7 @@ html {
   margin-right: 2rem;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .company-logo img {
@@ -56,13 +57,14 @@ header {
   top: 0;
   height: 6rem;
 
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 
   background: var(--clr-black);
   color: #fff;
   color: var(--clr-dark-grey);
 
+  width: 100%;
   padding: 0 2rem;
 
   z-index: 100;
@@ -71,7 +73,9 @@ header {
 
 header nav ul {
   display: flex;
+  width: 100%;
   list-style: none;
+  justify-content: flex-end;
 }
 
 header nav li {
@@ -127,9 +131,105 @@ header nav a {
   width: 100%;
   z-index: -1;
 }
-
 .nav-link:hover .dropdown-content {
   transform: scaleY(1);
+}
+
+/* ==== MENU TOGGLE ==== */
+.menu-toggle {
+  padding: 1rem;
+  cursor: pointer;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+  width: 2rem;
+  height: 4px;
+  background: var(--clr-dark-grey);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-toggle span {
+  position: relative;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.menu-toggle span::before {
+  top: -8px;
+}
+
+.menu-toggle span::after {
+  bottom: -8px;
+}
+
+.menu-toggle:hover span::before {
+  top: -9px;
+}
+
+.menu-toggle:hover span::after {
+  bottom: -9px;
+}
+
+.menu-toggle.active {
+  z-index: 2001;
+  margin-top: 4rem;
+}
+
+.menu-toggle.active span {
+  background-color: #fff;
+  width: 0;
+}
+
+.menu-toggle.active span::before,
+.menu-toggle.active span::after {
+  background-color: #fff;
+  top: 50%;
+}
+
+.menu-toggle.active span::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active span::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 680px) {
+  .menu-toggle {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
 }
 
 /* MAIN */

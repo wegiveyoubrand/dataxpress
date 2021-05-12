@@ -222,6 +222,7 @@ section > p {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .company-logo img {
@@ -574,7 +575,7 @@ nav .nav-link:hover .dropdown-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 2rem;
+  padding: 0 2rem; 
   background: var(--clr-black);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -584,13 +585,6 @@ nav .nav-link:hover .dropdown-content {
       -ms-flex-align: center;
           align-items: center;
   color: var(--clr-dark-grey);
-}
-
-.header > * {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header.fixed {
@@ -954,7 +948,4 @@ footer p span {
   padding: 2rem;
 }
 
-#meetTheCEO main {
-  min-height: 100vh;
-}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+#meetTheCEO main {
+  min-height: 100vh;
+}
+
+.page-title {
+  height: 45vh;
+  display: -ms-grid;
+  display: grid;
+  /* -ms-grid-columns: (1fr) [2]; */
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 15px #000;
+  line-height: 1;
+}
+
+.page-title > div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.page-title h2 {
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 3.5rem;
+  color: rgb(17, 182, 45);
+}
+
+@media (min-width: 600px) {
+  .page-title h2 {
+    font-size: 5rem;
+  }
+}
+
+.page-title h2 span {
+  letter-spacing: 10px;
+}
+
+.page-title h2 span:first-child {
+  letter-spacing: 20px;
+  margin-top: 5px;
+}
+
+.page-title p {
+  color: #f7f3ef;
+  /* font-size: 1.25rem; */
+  font-weight: 700;
+  opacity: 0.75;
+  letter-spacing: 1px;
+}
+
+.page-title .img {
+  height: 180px;
+  margin: auto;
+}
+
+.page-title img {
+  height: 180px;
+  width: 180px;
+}
