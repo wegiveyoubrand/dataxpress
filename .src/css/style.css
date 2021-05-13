@@ -633,10 +633,10 @@ main.auth {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  background-color: #2f455c;
+  background-color: #ffffff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  color: var(--clr-white);
+  color: var(--clr-dark-grey);
 }
 
 .hero h1 {
