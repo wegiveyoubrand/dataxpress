@@ -20,3 +20,7 @@
 .resources > div:hover {
   transform: scale(0.9);
 }
+.resources > div:hover i {
+  color: orange;
+  background-color: orange;
+}

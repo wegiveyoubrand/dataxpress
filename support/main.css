@@ -15,9 +15,14 @@
 }
 .service:hover {
   border: 2px solid var(--clr-green);
+  color: orangered
+
+}
+.service:hover i {
 }
 .service i {
   font-size: 100px;
+  transition: .35s ease;
 }
 
 @media (max-width: 600px) {
