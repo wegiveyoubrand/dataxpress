@@ -720,8 +720,9 @@ main.auth {
   height: auto;
   width: 100%;
   max-width: 400px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  background: var(--clr-dark-grey);
+  /* -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); */
   padding: 20px 2rem;
   margin: 0 auto;
   border-radius: 5px;
@@ -782,14 +783,14 @@ form .button {
   margin-top: 10px;
   padding: 10px 15px;
   margin-bottom: 10px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  -ms-flex-item-align: center;
+  align-self: center;
   outline: none;
   -webkit-box-shadow: 0 0 5px 0 var(--clr-dark-grey);
   box-shadow: 0 0 5px 0 var(--clr-dark-grey);
   border-radius: 5px;
   border: none;
-  background-color: var(--clr-orange);
+  background-color: var(--clr-brown);
   color: #000;
   font-size: 0.85rem;
   font-weight: 500;
@@ -800,7 +801,8 @@ form .button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  letter-spacing: 1px;
+  letter-spacing: 1px;width: 100%;
+  text-align: center;
 }
 
 form .button i {
